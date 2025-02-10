@@ -1,0 +1,31 @@
+import './App.css';
+import './Error.css';
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Country from "./pages/Country";
+import Applayout from "./component/Applayout";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import ErrorPage from './pages/ErrorPage';
+import "bootstrap/dist/css/bootstrap.css"
+
+
+const router = createBrowserRouter([
+  {
+    path: '/world-info',  
+    element: <Applayout />,
+    errorElement : <ErrorPage/>,
+        children: [
+      { path: '', element: <Home /> },  // ✅ Keep empty for default route
+      { path: 'about', element: <About /> },  // ❌ No leading "/"
+      { path: 'contact', element: <Contact /> },
+      { path: 'country', element: <Country /> },
+    ],
+  },
+]);
+
+function App() {
+  return <RouterProvider router={router} />;
+}
+
+export default App;

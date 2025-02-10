@@ -1,0 +1,51 @@
+@import url("https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css");
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes tilt {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+.animate-tilt {
+  animation: tilt 6s ease-in-out infinite;
+}
+
+@keyframes fallTopLeft {
+  0% { transform: translate(0, 0); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translate(-100px, 100vh); opacity: 0; }
+}
+@keyframes fallTopRight {
+  0% { transform: translate(0, 0); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translate(100px, 100vh); opacity: 0; }
+}
+.animate-fall-topLeft {
+  animation: fallTopLeft 5s linear infinite;
+}
+.animate-fall-topRight {
+  animation: fallTopRight 5s linear infinite;
+}
+
+/* Background */
+.bg-space {
+  background: url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/9770934.jpg-Wl31ERQfbntJABIblVId5PIBjqP5Gx.jpeg") no-repeat center center/cover;
+}
+
+/* UFO */
+.ufo {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: float 6s ease-in-out infinite, tilt 6s ease-in-out infinite;
+}
