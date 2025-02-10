@@ -6,7 +6,7 @@ const Header = () => {
 
 <nav className="navbar navbar-expand-lg navbar-dark ">
       <div className="container">
-        <Link className="navbar-brand mt-3 logo-name" to="/world-info">
+        <Link className="navbar-brand mt-3 logo-name" to="/World-Info/">
           WorldInfo
         </Link>
         {/* Toggle Button for Mobile View */}

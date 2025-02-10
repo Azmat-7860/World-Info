@@ -28,29 +28,106 @@
   font-size: 40px !important;
   opacity: 90%;
 }
-.items{
+.items {
   color: bisque !important;
   text-decoration: none;
   margin: 10px 15px;
   font-size: large;
-}
-.items:hover {
-  color: red !important;
+  transition: color 0.3s ease-in-out; 
 }
 
+.items:hover {
+  color: white !important;
+}
+
+
 .home-container {
-  /* Ensure the section also takes full height */
+ 
   width: 100vw;
   height: 100vh;
   background: inherit; /* Use the same background as the root */
 }
 .hero-sec {
   margin: auto;
-  margin-top: 160px !important;
+  margin-top: 170px !important;
   color: white;
   width: 70vw;
   height: fit-content;
 }
+.hero-heading h1{
+  font-weight: bold;
+  font-size: 69px;
+}
 .hero-detail {
-  padding: 0 30px;
+  padding: 10px 30px;
+}
+/* button code start from here  */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 200ms ease-out;
+}
+
+
+button {
+  appearance: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  isolation: isolate;
+  z-index: 5;
+}
+
+.mybutton {
+  width: 270px;
+  margin-top: 20px;
+  margin: auto;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+  text-decoration: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 72px;
+/*   border-block: 1px solid color-mix(in oklab, white, transparent 20%);
+  border-inline: 1px solid color-mix(in oklab, black, transparent 40%); */
+  border-radius: 9999rem;
+  background: color-mix(in oklab, black, transparent 95%);
+  backdrop-filter: blur(6px);
+  position: relative;
+  box-shadow: 0 -1px 0 0 color-mix(in oklab, white, transparent 50%), 0 1px 0 0 color-mix(in oklab, white, transparent 50%), -1px 0 0 0 color-mix(in oklab, black, transparent 50%), 1px 0 0 0 color-mix(in oklab, black, transparent 50%);
+  
+  &::before {
+    content: '';
+    border-radius: inherit;
+    background: color-mix(in oklab, black, transparent 90%);
+    position: absolute;
+    inset: 0;
+    transform: translate(0, 12px);
+    filter: blur(6px);
+    z-index: -1;
+  }
+  
+  &:hover {
+    scale: 1.1;
+    transition: scale 200ms ease-out;
+    
+    &::before {
+      background: color-mix(in oklab, black, transparent 95%);
+    }
+  }
+  
+  &:active {
+    scale: 0.9;
+    transition: scale 100ms ease-out;
+    
+    &::before {
+      background: color-mix(in oklab, black, transparent 85%);
+    }
+  }
 }
