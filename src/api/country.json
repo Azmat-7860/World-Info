@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "name": "Japan",
+      "capital": "Tokyo",
+      "population": 125.7,
+      "fact": "Japan has more than 6,800 islands."
+    },
+    {
+      "id": 2,
+      "name": "Canada",
+      "capital": "Ottawa",
+      "population": 38.5,
+      "fact": "Canada has the longest coastline in the world."
+    },
+    {
+        "id": 3,
+        "name": "India",
+        "capital": "New Delhi",
+        "population": 1417.2,
+        "fact": "India is the world's largest democracy."
+      },      
+    {
+      "id": 4,
+      "name": "Australia",
+      "capital": "Canberra",
+      "population": 26.3,
+      "fact": "Australia has more kangaroos than humans."
+    },
+    {
+      "id": 5,
+      "name": "India",
+      "capital": "New Delhi",
+      "population": 1417.2,
+      "fact": "India is the world's largest democracy."
+    },
+    {
+      "id": 6,
+      "name": "France",
+      "capital": "Paris",
+      "population": 67.8,
+      "fact": "The Eiffel Tower can be 15 cm taller in summer."
+    },
+    {
+      "id": 7,
+      "name": "South Africa",
+      "capital": "Pretoria",
+      "population": 59.3,
+      "fact": "South Africa has three capitals: Pretoria, Cape Town, and Bloemfontein."
+    },
+    {
+      "id": 8,
+      "name": "Russia",
+      "capital": "Moscow",
+      "population": 143.4,
+      "fact": "Russia is the largest country in the world by land area."
+    },
+    {
+      "id": 9,
+      "name": "Egypt",
+      "capital": "Cairo",
+      "population": 109.3,
+      "fact": "Egypt is home to the Great Pyramid of Giza, one of the Seven Wonders of the Ancient World."
+    },
+    {
+      "id": 10,
+      "name": "Germany",
+      "capital": "Berlin",
+      "population": 83.2,
+      "fact": "Germany is known for having over 1,500 different types of sausages."
+    }
+  ]
+  

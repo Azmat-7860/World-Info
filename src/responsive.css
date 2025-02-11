@@ -10,16 +10,35 @@
     font-weight: bold;
     font-size: 39px;
   }
+  .about-cards{
+    margin-top: 10%;
+    display: grid;
+  place-items: center;
+   grid-template-columns: 1fr;
+    gap: 20px;
+  }
   }
   
   /* Small Devices (Phones & Tablets) */
   @media (min-width: 577px) and (max-width: 768px) {
-   
+    .about-cards{
+      margin-top: 10%;
+      display: grid;
+      /* justify-content: center; */
+     grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
   }
   
   /* Medium Devices (Tablets & Small Laptops) */
   @media (min-width: 769px) and (max-width: 992px) {
-   
+    .about-cards{
+      margin-top: 10%;
+      display: grid;
+      /* justify-content: center; */
+     grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
   }
   
   /* Large Devices (Desktops & Laptops) */

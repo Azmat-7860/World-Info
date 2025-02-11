@@ -1,23 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaArrowRight } from "react-icons/fa";
+
+import Hero from "../component/Hero";
+import About from "./About";
 
 function Home() {
-  return (
-    <div className="container-fluid text-center home-container min-h-screen w-full">
-      <div className="hero-sec">
-        <div className="hero-heading "><h1>Explore the world</h1></div>
-        <div className="hero-detail">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-          dolorem perferendis nihil debitis voluptatem,
-        </div>
-        {/* Fix: Use className instead of class */}
-        <Link to="about" className="mybutton">
-          Go to About  <FaArrowRight color="white" className="ms-2"/>
-        </Link>
-      </div>
-    </div>
-  );
+  return <>
+  <Hero/>
+  <About/>
+  </>
 }
 
 export default Home;

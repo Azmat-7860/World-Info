@@ -131,3 +131,36 @@ button {
     }
   }
 }
+/*---------------- About section----------------- */
+.about-container {
+  width: 100vw;
+  color: white;
+ 
+}
+.about-container h2{
+  color: white;
+  font-weight: bolder;
+  font-size: 36px;
+}
+.about-cards{
+  margin-top: 15%;
+  display: grid;
+  
+  /* justify-content: center; */
+ grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.mycard {
+  width: 300px;
+  /* height: 160px; */
+  background: linear-gradient(120deg,
+    rgba(0, 0, 0, 0.3), /* Black with 30% opacity */
+    rgba(255, 255, 255, 0.2) /* White with 20% opacity */
+  );
+  border-radius: 10px 30px 10px 30px;
+  backdrop-filter: blur(10px); /* Blur effect for frosted glass */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  padding:10px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  
+}
