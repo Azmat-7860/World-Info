@@ -164,3 +164,39 @@ button {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
   
 }
+/* -------------Contact page------------  */
+.contact-container{
+  height: 100vh;
+}
+.contact-form{
+ padding: 10px 0px;
+  border-radius: 20px 10px 20px 10px;
+  border:1px solid #4746468a;
+  max-width: 350px;
+ background: linear-gradient(70deg,(rgba(0, 0, 0, 0.2)),rgba(255,255,255,0.3)); 
+ backdrop-filter: blur(10px);
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form button{
+  background: transparent;
+  outline: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px auto;
+  width: 70%;
+  border: 1px solid white;
+  border-radius: 5px 10px 5px 10px;
+}
+.contact-form button{
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  transition: all 0.5s ease-in;
+}
+.contact-form button:hover{
+  background-color: wheat;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+}

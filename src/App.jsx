@@ -20,8 +20,8 @@ const router = createBrowserRouter([
     element: <Applayout />,
     errorElement : <ErrorPage/>,
         children: [
-      { path: '', element: <Home /> },  // ✅ Keep empty for default route
-      { path: 'about', element: <About /> },  // ❌ No leading "/"
+      { path: '', element: <Home /> },  
+      { path: 'about', element: <About /> },  
       { path: 'contact', element: <Contact /> },
       { path: 'country', element: <Country /> },
     ],
