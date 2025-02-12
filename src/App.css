@@ -33,16 +33,14 @@
   text-decoration: none;
   margin: 10px 15px;
   font-size: large;
-  transition: color 0.3s ease-in-out; 
+  transition: color 0.3s ease-in-out;
 }
 
 .items:hover {
   color: white !important;
 }
 
-
 .home-container {
- 
   width: 100vw;
   height: 100vh;
   background: inherit; /* Use the same background as the root */
@@ -54,7 +52,7 @@
   width: 70vw;
   height: fit-content;
 }
-.hero-heading h1{
+.hero-heading h1 {
   font-weight: bold;
   font-size: 69px;
 }
@@ -70,7 +68,6 @@
   box-sizing: border-box;
   transition: all 200ms ease-out;
 }
-
 
 button {
   appearance: none;
@@ -94,16 +91,19 @@ button {
   justify-content: center;
   align-items: center;
   padding: 10px 72px;
-/*   border-block: 1px solid color-mix(in oklab, white, transparent 20%);
+  /*   border-block: 1px solid color-mix(in oklab, white, transparent 20%);
   border-inline: 1px solid color-mix(in oklab, black, transparent 40%); */
   border-radius: 9999rem;
   background: color-mix(in oklab, black, transparent 95%);
   backdrop-filter: blur(6px);
   position: relative;
-  box-shadow: 0 -1px 0 0 color-mix(in oklab, white, transparent 50%), 0 1px 0 0 color-mix(in oklab, white, transparent 50%), -1px 0 0 0 color-mix(in oklab, black, transparent 50%), 1px 0 0 0 color-mix(in oklab, black, transparent 50%);
-  
+  box-shadow: 0 -1px 0 0 color-mix(in oklab, white, transparent 50%),
+    0 1px 0 0 color-mix(in oklab, white, transparent 50%),
+    -1px 0 0 0 color-mix(in oklab, black, transparent 50%),
+    1px 0 0 0 color-mix(in oklab, black, transparent 50%);
+
   &::before {
-    content: '';
+    content: "";
     border-radius: inherit;
     background: color-mix(in oklab, black, transparent 90%);
     position: absolute;
@@ -112,20 +112,20 @@ button {
     filter: blur(6px);
     z-index: -1;
   }
-  
+
   &:hover {
     scale: 1.1;
     transition: scale 200ms ease-out;
-    
+
     &::before {
       background: color-mix(in oklab, black, transparent 95%);
     }
   }
-  
+
   &:active {
     scale: 0.9;
     transition: scale 100ms ease-out;
-    
+
     &::before {
       background: color-mix(in oklab, black, transparent 85%);
     }
@@ -135,50 +135,52 @@ button {
 .about-container {
   width: 100vw;
   color: white;
- 
 }
-.about-container h2{
+.about-container h2 {
   color: white;
   font-weight: bolder;
   font-size: 36px;
 }
-.about-cards{
+.about-cards {
   margin-top: 15%;
   display: grid;
-  
-  /* justify-content: center; */
- grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
 .mycard {
   width: 300px;
   /* height: 160px; */
-  background: linear-gradient(120deg,
-    rgba(0, 0, 0, 0.3), /* Black with 30% opacity */
-    rgba(255, 255, 255, 0.2) /* White with 20% opacity */
+  background: linear-gradient(
+    120deg,
+    rgba(0, 0, 0, 0.3),
+    /* Black with 30% opacity */ rgba(255, 255, 255, 0.2)
+      /* White with 20% opacity */
   );
   border-radius: 10px 30px 10px 30px;
   backdrop-filter: blur(10px); /* Blur effect for frosted glass */
   -webkit-backdrop-filter: blur(10px); /* Safari support */
-  padding:10px 20px;
+  padding: 10px 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
-  
 }
 /* -------------Contact page------------  */
-.contact-container{
+.contact-container {
   height: 100vh;
 }
-.contact-form{
- padding: 10px 0px;
+.contact-form {
+  padding: 10px 0px;
   border-radius: 20px 10px 20px 10px;
-  border:1px solid #4746468a;
+  border: 1px solid #4746468a;
   max-width: 350px;
- background: linear-gradient(70deg,(rgba(0, 0, 0, 0.2)),rgba(255,255,255,0.3)); 
- backdrop-filter: blur(10px);
+  background: linear-gradient(
+    70deg,
+    (rgba(0, 0, 0, 0.2)),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(10px);
 }
 .contact-form input,
 .contact-form textarea,
-.contact-form button{
+.contact-form button {
   background: transparent;
   outline: none;
   color: white;
@@ -188,15 +190,98 @@ button {
   border: 1px solid white;
   border-radius: 5px 10px 5px 10px;
 }
-.contact-form button{
+.contact-form button {
   color: white;
   font-size: large;
   font-weight: bold;
   transition: all 0.5s ease-in;
 }
-.contact-form button:hover{
+.contact-form button:hover {
   background-color: wheat;
   color: black;
   font-size: large;
   font-weight: bold;
+}
+/* --------------coutry section----------------  */
+.country-container ul{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+}
+.countryCard {
+  width: 300px;
+  background: linear-gradient(
+    120deg,
+    rgba(0, 0, 0, 0.3),
+    rgba(255, 255, 255, 0.2)
+  );
+  border-radius: 10px 30px 10px 30px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  padding: 10px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.countryCard button{
+  background: transparent;
+  outline: none;
+  color: white;
+  padding: 5px 10px;
+  /* margin: 10px auto; */
+  width: 50%;
+  border: 1px solid white;
+  border-radius: 5px 10px 5px 10px;
+  font-size:medium;
+  font-weight: bold;
+  transition: all 0.5s ease-in;
+}
+.countryCard button:hover {
+  background-color: wheat;
+  color: black;
+  font-weight: bold;
+}
+.loader {
+  --w: 10ch;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  letter-spacing: var(--w);
+  width: var(--w);
+  overflow: hidden;
+  white-space: nowrap;
+  text-shadow: calc(-1 * var(--w)) 0, calc(-2 * var(--w)) 0,
+    calc(-3 * var(--w)) 0, calc(-4 * var(--w)) 0, calc(-5 * var(--w)) 0,
+    calc(-6 * var(--w)) 0, calc(-7 * var(--w)) 0, calc(-8 * var(--w)) 0,
+    calc(-9 * var(--w)) 0;
+  animation: l16 2s infinite;
+}
+.loader:before {
+  content: "Loading...";
+}
+@keyframes l16 {
+  20% {
+    text-shadow: calc(-1 * var(--w)) 0, calc(-2 * var(--w)) 0 red,
+      calc(-3 * var(--w)) 0, calc(-4 * var(--w)) 0 #ffa516,
+      calc(-5 * var(--w)) 0 #63fff4, calc(-6 * var(--w)) 0,
+      calc(-7 * var(--w)) 0, calc(-8 * var(--w)) 0 green, calc(-9 * var(--w)) 0;
+  }
+  40% {
+    text-shadow: calc(-1 * var(--w)) 0, calc(-2 * var(--w)) 0 red,
+      calc(-3 * var(--w)) 0 #e945e9, calc(-4 * var(--w)) 0,
+      calc(-5 * var(--w)) 0 green, calc(-6 * var(--w)) 0 orange,
+      calc(-7 * var(--w)) 0, calc(-8 * var(--w)) 0 green, calc(-9 * var(--w)) 0;
+  }
+  60% {
+    text-shadow: calc(-1 * var(--w)) 0 lightblue, calc(-2 * var(--w)) 0,
+      calc(-3 * var(--w)) 0 #e945e9, calc(-4 * var(--w)) 0,
+      calc(-5 * var(--w)) 0 green, calc(-6 * var(--w)) 0,
+      calc(-7 * var(--w)) 0 yellow, calc(-8 * var(--w)) 0 #ffa516,
+      calc(-9 * var(--w)) 0 red;
+  }
+  80% {
+    text-shadow: calc(-1 * var(--w)) 0 lightblue, calc(-2 * var(--w)) 0 yellow,
+      calc(-3 * var(--w)) 0 #63fff4, calc(-4 * var(--w)) 0 #ffa516,
+      calc(-5 * var(--w)) 0 red, calc(-6 * var(--w)) 0,
+      calc(-7 * var(--w)) 0 grey, calc(-8 * var(--w)) 0 #63fff4,
+      calc(-9 * var(--w)) 0;
+  }
 }

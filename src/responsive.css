@@ -1,53 +1,69 @@
 /* Extra Small Devices (Phones) */
 @media (max-width: 576px) {
-  .hero-sec{
+  .hero-sec {
     width: 90vw;
   }
   .hero-detail {
     padding: 10px 10px;
   }
-  .hero-heading h1{
+  .hero-heading h1 {
     font-weight: bold;
     font-size: 39px;
   }
-  .about-cards{
+  .about-cards {
     margin-top: 10%;
     display: grid;
-  place-items: center;
-   grid-template-columns: 1fr;
+    place-items: center;
+    grid-template-columns: 1fr;
     gap: 20px;
   }
+  .country-container ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
-  
-  /* Small Devices (Phones & Tablets) */
-  @media (min-width: 577px) and (max-width: 768px) {
-    .about-cards{
-      margin-top: 10%;
-      display: grid;
-      /* justify-content: center; */
-     grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
+}
+
+/* Small Devices (Phones & Tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .about-cards {
+    margin-top: 10%;
+    display: grid;
+    /* justify-content: center; */
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
-  
-  /* Medium Devices (Tablets & Small Laptops) */
-  @media (min-width: 769px) and (max-width: 992px) {
-    .about-cards{
-      margin-top: 10%;
-      display: grid;
-      /* justify-content: center; */
-     grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
+  .country-container ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
   }
-  
-  /* Large Devices (Desktops & Laptops) */
-  @media (min-width: 993px) and (max-width: 1200px) {
-   
+}
+
+/* Medium Devices (Tablets & Small Laptops) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .about-cards {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
-  
-  /* Extra Large Devices (Big Screens) */
-  @media (min-width: 1201px) {
-   
+  .country-container ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
   }
-  
+}
+
+/* Large Devices (Desktops & Laptops) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .country-container ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+  }
+}
+
+/* Extra Large Devices (Big Screens) */
+@media (min-width: 1201px) {
+}
