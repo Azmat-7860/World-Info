@@ -81,7 +81,7 @@ function ErrorPage() {
         {routeError && <p className="mb-8 text-xl text-gray-300">
          {routeError.data}
         </p>}
-        <NavLink to={"/world-info"}>
+        <NavLink to={"/World-Info/"}>
         <a
           href="/"
           className="px-6 py-3 text-white bg-purple-600 rounded-lg hover:bg-purple-700"
