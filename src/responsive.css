@@ -20,7 +20,22 @@
   .country-container ul{
     display: grid;
     grid-template-columns: 1fr;
+    place-items: center;
     gap: 20px;
+  }
+  .country-details {
+    flex-direction: column; /* Stack flag and info */
+    text-align: center;
+  }
+
+  .country-flag {
+    max-width: 100%; /* Full width */
+  }
+
+  .country-info {
+    padding-left: 0;
+    line-height: 30px;
+    padding-top: 20px; /* Space between flag and info */
   }
 }
 
@@ -38,6 +53,20 @@
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
   }
+  .country-details {
+    flex-direction: column; /* Stack flag and info */
+    text-align: center;
+  }
+  
+  .country-flag {
+    max-width: 100%; /* Full width */
+  }
+
+  .country-info {
+    padding-left: 0;
+    line-height: 30px;
+    padding-top: 20px; /* Space between flag and info */
+  }
 }
 
 /* Medium Devices (Tablets & Small Laptops) */
@@ -52,6 +81,7 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
+
   }
 }
 

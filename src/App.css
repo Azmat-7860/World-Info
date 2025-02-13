@@ -142,7 +142,7 @@ button {
   font-size: 36px;
 }
 .about-cards {
-  margin-top: 15%;
+  margin-top: 10%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
@@ -239,6 +239,60 @@ button {
   color: black;
   font-weight: bold;
 }
+/* country details */
+.country-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* background-color: #1a1a1a; */
+  background: linear-gradient(70deg, rgba(0,0,0,0.3),rgba(255,255,255,0,2));
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 30px; 
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+  max-width: 900px;
+  /* height: 70vh;  */
+  margin: auto;
+}
+
+/* Left Side - Flag */
+.country-flag {
+  flex: 2;
+  max-width: 60%; 
+  text-align: center; }
+
+.country-flag img {
+  width: 100%;
+  height: auto;
+  max-height: 350px; /* Increase size of flag */
+  border-radius: 12px;
+}
+
+/* Right Side - Info */
+.country-info {
+  flex: 1;
+  padding-left: 30px;
+  line-height: 45px;
+  font-size: 18px; 
+}
+
+.country-info h2 {
+  font-size: 28px; 
+  font-weight: bold;
+  text-decoration: underline;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.country-info p {
+  font-size: 18px;
+  margin: 6px 0;
+}
+
+
+/* ------  */
 .loader {
   --w: 10ch;
   font-weight: bold;
