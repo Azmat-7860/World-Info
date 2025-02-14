@@ -8,11 +8,10 @@ function Country() {
   const [isPending, startTransition] = useTransition();
   const [countries, setCountries] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 10; // Show 10 countries per page
+  const itemsPerPage = 10; 
 
   const [search, setSearch] = useState();
   const [select, setSelect] = useState("all");
-  // console.log(search,select);
   const findCountry = (country) => {
     if (search) {
       return country.name.common.toLowerCase().includes(search.toLowerCase());
@@ -38,13 +37,9 @@ function Country() {
   if (isPending) {
     return <Loader />;
   }
-// console.log("this is search country"+searchCountry);
-
-  // Calculate pagination range
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const visibleCountries = searchCountry.slice(startIndex, endIndex);
-console.log("this is visiblecountry" + visibleCountries);
 
   return (
     <div className="container country-container text-white">
@@ -54,7 +49,7 @@ console.log("this is visiblecountry" + visibleCountries);
         select={select}
         setSelect={setSelect}
       />
-      <ul className="p-0">
+      <ul className="p-0 ">
         {visibleCountries.map((currCountry, index) => (
           <CountryCard country={currCountry} key={index} />
         ))}

@@ -8,29 +8,15 @@ import Contact from "./pages/Contact";
 import Country from "./pages/Country";
 import Applayout from "./component/Applayout";
 import CountryDetails from './component/CountryDetails';
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
+import {  createHashRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import ErrorPage from './pages/ErrorPage';
 
 import "bootstrap/dist/css/bootstrap.css"
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-
-// const router = createBrowserRouter([
-//   {
-//     path: '/World-Info/',  
-//     element: <Applayout />,
-//     errorElement : <ErrorPage/>,
-//         children: [
-//       { path: '', element: <Home /> },  
-//       { path: 'about', element: <About /> },  
-//       { path: 'contact', element: <Contact /> },
-//       { path: 'country', element: <Country /> },
-//     ],
-//   },
-// ]);
-const router = createBrowserRouter ( 
+const router = createHashRouter(  
   createRoutesFromElements(
-    <Route path='/World-Info/' element={<Applayout/> } errorElement={<ErrorPage/>} >
+    <Route path='/' element={<Applayout/> } errorElement={<ErrorPage/>} >
       <Route index element={<Home/>} />
       <Route path='about' element={<About/>} />
       <Route path='contact' element={<Contact/>} />
@@ -38,8 +24,7 @@ const router = createBrowserRouter (
       <Route path='country/:id' element={<CountryDetails/>} />
     </Route>
   )
-)
-
+);
 function App() {
   return <RouterProvider router={router} />;
 }

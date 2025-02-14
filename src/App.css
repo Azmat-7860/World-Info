@@ -213,7 +213,7 @@ button {
 /* --------------coutry section----------------  */
 .country-container ul {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 .countryCard {
@@ -341,8 +341,8 @@ button {
 .searchInput input,
 .selectSearch select{
   outline: none;
-  /* color: white; */
   padding: 10px 20px;
+  background-color: black;
   width: 100%;
   border: 1px solid white;
   border-radius: 5px 10px 5px 10px;

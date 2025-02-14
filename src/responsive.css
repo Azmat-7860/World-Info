@@ -87,13 +87,18 @@
 
 /* Large Devices (Desktops & Laptops) */
 @media (min-width: 993px) and (max-width: 1200px) {
-  .country-container ul{
+  /* .country-container ul{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
-  }
+  } */
 }
 
 /* Extra Large Devices (Big Screens) */
-@media (min-width: 1201px) {
+@media (min-width: 1401px) {
+  .country-container ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
 }
