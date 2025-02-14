@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useTransition } from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { getCountryDetails } from "../api/postApi";
 import Loader from "./Loader";
+import { FaArrowRight } from "react-icons/fa";
 
 const CountryDetails = () => {
   const { id } = useParams();
@@ -57,6 +58,7 @@ const CountryDetails = () => {
             ? country.borders.join(", ")
             : "No bordering countries"}
         </p>
+        <NavLink to="/World-Info/country"> <button type="button">Go Back </button> </NavLink>
       </div>
     </div>
   );
