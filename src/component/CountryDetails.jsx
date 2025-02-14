@@ -58,7 +58,7 @@ const CountryDetails = () => {
             ? country.borders.join(", ")
             : "No bordering countries"}
         </p>
-        <NavLink to="/World-Info/country"> <button type="button">Go Back </button> </NavLink>
+        <NavLink to="/country"> <button type="button">Go Back </button> </NavLink>
       </div>
     </div>
   );

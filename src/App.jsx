@@ -21,7 +21,7 @@ const router = createHashRouter(
       <Route path='about' element={<About/>} />
       <Route path='contact' element={<Contact/>} />
       <Route path='country' element={<Country/>} />
-      <Route path='country/:id' element={<CountryDetails/>} />
+      <Route path='/World-Info/country/:id' element={<CountryDetails/>} />
     </Route>
   )
 );
